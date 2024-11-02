@@ -1,0 +1,19 @@
+<form id="addForm">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" #title>
+    </div>
+    <div class="mb-3">
+      Date
+      <input type="date" class="form-control" id="date" #date>
+    </div>
+    <div class="mb-3">
+      <label for="url" class="form-label">URL</label>
+      <input type="url" class="form-control" id="url" #url/>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" id="description" #description rows="5"></textarea>
+    </div>
+    <button type="button" id="btnValidAdd" class="btn btn-warning" (click)="addArticle(title.value,date.value,url.value,description.value)">Valider</button>
+</form>
